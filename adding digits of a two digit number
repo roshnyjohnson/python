@@ -1,0 +1,2 @@
+num1=input("enter a two digit  number")
+print(int(num1[0])+int(num1[1]))
