@@ -3,11 +3,13 @@ paper is 1
 scissor is 2'''
 import random
 user=int(input("enter your choice \nrock is 0\npaper is 1\nscissor is 2"))
+list=["rock","paper","scissor"]
+print("you have chose",list[user])
 if user>2 or user<0:
     print("invalid choice you loose")
 else:
     computer=random.randint(0,2)
-    print("the computer has chose",computer)
+    print("the computer has chose",list[computer])
     if user==computer:
         print("its a draw")
     elif user==0 and computer==2:
