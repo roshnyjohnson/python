@@ -1,0 +1,8 @@
+import random
+#n=int(input("enter the number of people"))
+text=input("enter the names of the people separated with a space\n")
+textlist=text.split(" ")
+print(textlist)
+length=len(textlist)
+index=random.randint(0,length)
+print("The person to pay is ",textlist[index])
