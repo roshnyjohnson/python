@@ -1,0 +1,7 @@
+print("calculating on the basis that you live until 90 years old")
+age=input("what is your age")
+left_years=90-int(age)
+c=12*left_years
+b=52*left_years
+a=365*left_years
+print(f"you have {a} days,{b} weeks and {c} months left")
