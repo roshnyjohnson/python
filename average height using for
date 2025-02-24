@@ -1,0 +1,16 @@
+height=input("enter all heights separated by space ")
+list=height.split(" ")
+count=0
+for height in list:
+    count=count+1
+print(count)
+
+print(list)
+for i in range(0,count):
+    list[i]=int(list[i])
+print(list)
+total=0
+for each in list:
+    total+=each
+print("sum is",total)
+print("average is",round(total/count))
