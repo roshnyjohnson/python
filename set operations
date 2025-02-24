@@ -1,0 +1,23 @@
+set1={1,9,2,2,3}
+set2={5,6,2,3,7}
+set4={1,7}
+set3={"ram","jiya"}
+print(set1.union(set2,set3))
+print(set1|set2)
+print(set1.union(("mohan","ramesh")))#list also possible
+#set1|tuple1 not possible
+print(set1.intersection(set2,set3))
+print(set1&set2)
+print(set1.intersection(("mohan","ramesh",1)))
+#set1.intersection_update(set2)
+print(set1)
+print(set1.difference(set2))
+print(set1-set2)
+print(set1.difference((2,9)))
+print(set1.difference(set2,set4))
+#set1.difference_update(set2)
+print(set1)
+print(set1.symmetric_difference(set2))#not on mul sets
+print(set1^set2^set4)
+set1.symmetric_difference_update(set2)
+print(set1)
