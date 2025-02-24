@@ -7,9 +7,9 @@ for i in list:
 print(count)
 for i in range(0,count):
     list[i]=int(list[i])
-max=list[0]
+maximum=list[0]
 
 for every in list:
-    if list[i]>max:
-        max=list[i]
-print(max)
+    if every>max:
+        maximum=every
+print(maximum)
