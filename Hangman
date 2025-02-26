@@ -1,0 +1,29 @@
+import random
+print("you have total of 6 lives")
+lives=6
+words=["apple","orange","yellow","hello","overview"]
+w1=random.choice(words)
+display=[]
+for i in w1:
+    display+='_'
+print(display)
+game_over=False
+while not game_over:
+     letter=input("guess a letter")
+     for position in range(len(w1)):
+         now_letter=w1[position]
+         if now_letter==letter:
+             display[position]=now_letter
+             print(display)
+
+     if letter not in w1:
+         lives-=1
+         print("oops you lost a life\n no of lives is ",lives)
+         if lives==0:
+             game_over=True
+             print('you loose')
+
+     if "_" not in display:
+         game_over=True
+         print("you win")
+
