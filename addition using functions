@@ -1,0 +1,6 @@
+def total(a,b):
+    tot=a+b
+    print(tot)
+
+total(4,5)
+total(-1,-8)
