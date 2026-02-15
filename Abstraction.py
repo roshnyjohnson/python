@@ -1,6 +1,8 @@
 #main_abstarct.py
 from abc import ABC, abstractmethod
 
+
+
 class Vehicle(ABC):
     def __init__(self, n):
         self.no_of_types = n
